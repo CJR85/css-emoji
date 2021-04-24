@@ -52,14 +52,23 @@ body {
   right: calc(var(--emoji-size) * -0.2);
 }
 
-.smile {
-  --mouth-height: calc(var(--emoji-size) * 0.3);
+.mouth {
   position: absolute;
   bottom: calc(var(--emoji-size) * 0.15);
   left: calc(var(--emoji-size) * 0.5);
   transform: translateX(-50%);
   background-color: #000;
+}
+
+.smile {
+  --mouth-height: calc(var(--emoji-size) * 0.3);
   width: calc(var(--emoji-size) * 0.6);
   height: var(--mouth-height);
   border-radius: 5% 5% var(--mouth-height) var(--mouth-height);
+}
+
+.open-mouth {
+  width: calc(var(--emoji-size) * 0.25);
+  height: calc(var(--emoji-size) * 0.3);
+  border-radius: 50%;
 }
