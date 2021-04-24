@@ -28,6 +28,7 @@ body {
   background-color: #ffc83d;
   overflow: hidden;
   position: relative;
+  z-index: -1;
 }
 
 .eyes {
@@ -71,4 +72,47 @@ body {
   width: calc(var(--emoji-size) * 0.25);
   height: calc(var(--emoji-size) * 0.3);
   border-radius: 50%;
+}
+
+.face-mask {
+  left: calc(var(--emoji-size) * 0.2);
+  transform: none;
+  width: calc(var(--emoji-size) * 0.6);
+  height: calc(var(--emoji-size) * 0.35);
+  border-radius: 10%;
+  background-color: #fff;
+  border: calc(var(--emoji-size) * 0.02) solid #999;
+}
+
+.strap {
+  position: absolute;
+  background-color: #fff;
+  border: calc(var(--emoji-size) * 0.02) solid #999;
+  width: calc(var(--emoji-size) * 0.5);
+  height: calc(var(--emoji-size) * 0.1);
+  z-index: -2;
+}
+
+.strap-top-left {
+  transform: rotate(20deg);
+  top: calc(var(--emoji-size) * -0.05);
+  left: calc(var(--emoji-size) * -0.4);
+}
+
+.strap-top-right {
+  transform: rotate(-20deg);
+  top: calc(var(--emoji-size) * -0.05);
+  right: calc(var(--emoji-size) * -0.4);
+}
+
+.strap-bottom-left {
+  transform: rotate(-30deg);
+  bottom: calc(var(--emoji-size) * -0.06);
+  left: calc(var(--emoji-size) * -0.4);
+}
+
+.strap-bottom-right {
+  transform: rotate(30deg);
+  bottom: calc(var(--emoji-size) * -0.06);
+  right: calc(var(--emoji-size) * -0.4);
 }
